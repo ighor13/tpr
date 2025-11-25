@@ -18,15 +18,15 @@ real sum(const real alpha,const natural n);
 
 real p(const real alpha,const natural n)
 {
-	return (pow(alpha,n)/fact(n))/sum(alpha,n);
+	return (powl(alpha,n)/fact(n))/sum(alpha,n);
 }
 
 real sum(const real alpha,const natural n)
 {
 	if(n==0)
-		return pow(alpha,n)/fact(n); // const=1
+		return powl(alpha,n)/fact(n); // const=1
 	else
-		return pow(alpha,n)/fact(n)+sum(alpha,n-1);
+		return powl(alpha,n)/fact(n)+sum(alpha,n-1);
 }
 
 int main(int argc, char* argv[])
