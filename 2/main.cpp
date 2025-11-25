@@ -52,12 +52,9 @@ int main(int argc, char* argv[])
 
 	real pn=0;
 	for(natural i=0;i<sizeof a/sizeof a[0];i++,cout<<endl) // rows
-		for(natural j=0;j<sizeof a[0]/sizeof(a[0][0]);j++,pn=0) // cols
-		{
-			for(natural k=0;k<sizeof a[0] / sizeof(a[0][0]);k++) // cols
+		for(natural j=0;j<sizeof a[0]/sizeof(a[0][0]);j++,cout<<pn<<"\t",pn=0) // cols
+			for(natural k=0;k<sizeof a[0]/sizeof(a[0][0]);k++) // cols
 				pn+=a[i][k]*p(a[i][k]/mu,b[j][k]);
-			cout<<pn<<"\t";
-		}
 
 	return 0;
 }
