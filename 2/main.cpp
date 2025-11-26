@@ -6,13 +6,7 @@ using namespace std;
 typedef long double real;
 typedef unsigned long int natural;
 
-real fact(const natural n) // да, факториал - натуральное число, но происходит потеря точности при больших n для unsigned long int, поэтому long double
-{
-	if(n==0)
-		return 1;
-	else
-		return n*fact(n-1);
-}
+real fact(const natural n);
 
 real sum(const real alpha,const natural n);
 
@@ -27,6 +21,14 @@ real sum(const real alpha,const natural n)
 		return powl(alpha,n)/fact(n); // const=1
 	else
 		return powl(alpha,n)/fact(n)+sum(alpha,n-1);
+}
+
+real fact(const natural n) // да, факториал - натуральное число, но происходит потеря точности при больших n для unsigned long int, поэтому long double
+{
+	if(n==0)
+		return 1;
+	else
+		return n*fact(n-1);
 }
 
 int main(int argc, char* argv[])
