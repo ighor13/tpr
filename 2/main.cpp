@@ -6,9 +6,9 @@ using namespace std;
 typedef long double real;
 typedef unsigned long int natural;
 
-real fact(const natural n);
+real fact(const natural);
 
-real sum(const real alpha,const natural n);
+real sum(const real,const natural);
 
 real p(const real alpha,const natural n)
 {
