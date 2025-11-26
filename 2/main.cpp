@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
 
     //a [row] [col]
 
-	std::cout.precision(8); // <- выводим N знаков после запятой
+	cout.precision(8); // <- выводим N знаков после запятой
 
 	real pn=0;
 	for(natural i=0;i<sizeof a/sizeof a[0];i++,cout<<endl) // rows
