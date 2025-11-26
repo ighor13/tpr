@@ -32,14 +32,14 @@ real sum(const real alpha,const natural n)
 int main(int argc, char* argv[])
 {
 	real mu=0.3;
-	real a[][3] = // <- 3 rows
+	real a[][3] = // <- 3 cols
 		{ 
 		    {0.4,0.3,0.3},
 		    {0.3,0.4,0.3},
 		    {0.4,0.4,0.2}
 		};
 
-    natural b[][3] = // <- 3 rows
+    natural b[][3] = // <- 3 cols
 		{    
 		    {3,1,0},
 		    {2,2,0},
