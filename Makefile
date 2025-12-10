@@ -1,4 +1,4 @@
-MODULES = 2
+MODULES = 2 3
 all:
 	for dir in $(MODULES); do \
 		(cd $$dir; ${MAKE} all); \
