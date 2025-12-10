@@ -1,5 +1,4 @@
 #include <iostream>
-#include <math.h>
 
 using namespace std;
 
@@ -10,11 +9,22 @@ typedef unsigned long int natural;
 int main(int argc, char* argv[])
 {
 
-	real a11=0.39242327;
-	real a12=0.48373288;
-	real a21=0.54732143;
-	real a22=0.41034483;
+//	real a11=0.39242327;
+//	real a12=0.48373288;
+//	real a21=0.54732143;
+//	real a22=0.41034483;
+
+//	real a11=0.438571;
+//	real a12=0.410344;
+//	real a21=0.401232;
+//	real a22=0.4525;
 	
+
+	real a11=0.483733;
+	real a12=0.342466;
+	real a21=0.438571;
+	real a22=0.470345;
+
 	real p1=(a22-a21)/(a11+a22-a12-a21);
 	real p2=1-p1;
 	real q1=(a22-a12)/(a11+a22-a12-a21);
